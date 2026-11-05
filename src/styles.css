@@ -519,3 +519,15 @@ a:focus-visible {
     opacity: 0.25;
   }
 }
+.link-arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.link-arrow svg {
+  display: block;
+  width: 18px;
+  height: 18px;
+}

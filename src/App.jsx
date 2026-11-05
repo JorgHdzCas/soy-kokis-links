@@ -1,5 +1,6 @@
 
 import { useState } from "react";
+import { ArrowUpRight } from "lucide-react";
 import {
   FaInstagram,
   FaTiktok,
@@ -7,9 +8,6 @@ import {
   FaYoutube,
   FaTwitch,
   FaDiscord,
-  FaXTwitter,
-  FaWhatsapp,
-  FaGithub,
 } from "react-icons/fa6";
 
 import SpaceBackground from "./SpaceBackground";
@@ -22,9 +20,6 @@ const iconMap = {
   youtube: FaYoutube,
   twitch: FaTwitch,
   discord: FaDiscord,
-  x: FaXTwitter,
-  whatsapp: FaWhatsapp,
-  github: FaGithub,
 };
 
 const categories = ["Todos", "Redes sociales", "Streaming", "Comunidad"];
@@ -90,7 +85,9 @@ export default function App() {
 
             <button className="share-button" onClick={handleShare}>
               <span>{copied ? "¡Enlace copiado!" : "Compartir perfil"}</span>
-              <span aria-hidden="true">↗</span>
+              <span className="link-arrow" aria-hidden="true">
+                <ArrowUpRight size={18} strokeWidth={2} />
+              </span>
             </button>
           </header>
 
@@ -139,7 +136,7 @@ export default function App() {
                     </span>
 
                     <span className="link-arrow" aria-hidden="true">
-                      ↗
+                      <ArrowUpRight size={18} strokeWidth={2} />
                     </span>
                   </a>
                 );

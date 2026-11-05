@@ -1,4 +1,3 @@
-
 {
   "name": "soy-kokis-links",
   "private": true,
@@ -10,6 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "lucide-react": "^1.69.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-icons": "^5.5.0"
