@@ -356,21 +356,19 @@ button {
 
 .link-arrow {
   display: inline-flex;
+  flex: 0 0 20px;
   align-items: center;
   justify-content: center;
   width: 20px;
   height: 20px;
   transition: transform 0.2s ease;
-  
 }
 
 .link-arrow img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
   display: block;
-  transition: filter 0.2s ease;
-  fill: white;
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
 }
 
 .link-card:hover .link-arrow {

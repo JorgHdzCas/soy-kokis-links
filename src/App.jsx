@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import {
   FaInstagram,
@@ -7,9 +6,6 @@ import {
   FaYoutube,
   FaTwitch,
   FaDiscord,
-  FaXTwitter,
-  FaWhatsapp,
-  FaGithub,
 } from "react-icons/fa6";
 
 import SpaceBackground from "./SpaceBackground";
@@ -89,7 +85,7 @@ export default function App() {
               <span>{copied ? "¡Enlace copiado!" : "Compartir perfil"}</span>
               
               <span className="link-arrow" aria-hidden="true">
-                <img src="/public/external-link.svg" alt=""/>
+                <img src="/external-link.svg" alt=""/>
               </span>
             
             </button>
@@ -141,7 +137,7 @@ export default function App() {
 
                     <span className="link-arrow" aria-hidden="true">
                     <img
-                      src="/public/external-link.svg"
+                      src="/external-link.svg"
                       alt=""
                     />
                   </span>
