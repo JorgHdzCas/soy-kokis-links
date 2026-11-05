@@ -1,6 +1,5 @@
 
 import { useState } from "react";
-import { ArrowUpRight } from "lucide-react";
 import {
   FaInstagram,
   FaTiktok,
@@ -8,6 +7,9 @@ import {
   FaYoutube,
   FaTwitch,
   FaDiscord,
+  FaXTwitter,
+  FaWhatsapp,
+  FaGithub,
 } from "react-icons/fa6";
 
 import SpaceBackground from "./SpaceBackground";
@@ -85,9 +87,11 @@ export default function App() {
 
             <button className="share-button" onClick={handleShare}>
               <span>{copied ? "¡Enlace copiado!" : "Compartir perfil"}</span>
+              
               <span className="link-arrow" aria-hidden="true">
-                <ArrowUpRight size={18} strokeWidth={2} />
+                <img src="/public/external-link.svg" alt=""/>
               </span>
+            
             </button>
           </header>
 
@@ -136,8 +140,11 @@ export default function App() {
                     </span>
 
                     <span className="link-arrow" aria-hidden="true">
-                      <ArrowUpRight size={18} strokeWidth={2} />
-                    </span>
+                    <img
+                      src="/public/external-link.svg"
+                      alt=""
+                    />
+                  </span>
                   </a>
                 );
               })}

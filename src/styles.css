@@ -355,18 +355,27 @@ button {
 }
 
 .link-arrow {
-  color: #827b9c;
-  font-size: 1.1rem;
-  transition:
-    color 0.2s ease,
-    transform 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  transition: transform 0.2s ease;
+  
+}
+
+.link-arrow img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+  transition: filter 0.2s ease;
+  fill: white;
 }
 
 .link-card:hover .link-arrow {
-  color: var(--brand-color);
   transform: translate(2px, -2px);
 }
-
 /* Pie de página */
 
 .footer {
@@ -518,16 +527,4 @@ a:focus-visible {
   .space-background {
     opacity: 0.25;
   }
-}
-.link-arrow {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-}
-
-.link-arrow svg {
-  display: block;
-  width: 18px;
-  height: 18px;
 }
